@@ -20,7 +20,7 @@
         "backlight",
         "tray",
         "temperature",
-		"memory",
+		"disk",
         "battery"
     ],
     "clock": {
@@ -99,8 +99,10 @@
         "icon-size": 16,
         "spacing": 10
     },
-	"memory": {
-		"format": "{}% "
+	"disk": {
+		"path": "/",
+		"format": "{percentage_used}% ",
+		"on-click": "nemo",
 	},
 
 }]
