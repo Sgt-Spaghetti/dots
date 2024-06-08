@@ -55,7 +55,7 @@
         "max-length": 10,
         "format-alt-click": "click-right",
         "format-alt": "   ",
-        "on-click": "htop"
+        "on-click": "alacritty -e htop"
     },
 
     "battery": {
