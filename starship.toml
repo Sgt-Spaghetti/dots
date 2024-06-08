@@ -1,0 +1,19 @@
+format = """
+[ ]()\
+$os\
+[  ]()\
+$username\
+$directory\
+:\
+[ ]()\
+"""
+
+[os]
+disabled = false
+style = "fg:#bc2119"
+
+[os.symbols]
+Arch = "󰣇"
+
+[username]
+show_always = true

@@ -1,0 +1,107 @@
+[{
+    "position": "top",
+    "layer": "top",
+    "height": 16,
+    "margin-top": 5,
+    "margin-bottom": 0,
+    "margin-left": 10,
+    "margin-right": 10,
+    "modules-left": [
+        "custom/power_btn",
+        "custom/lock_screen",
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "cpu",
+        "pulseaudio",
+        "backlight",
+        "tray",
+        "temperature",
+		"memory",
+        "battery"
+    ],
+    "clock": {
+		"format": "{:%H:%M}  ",
+		"interval": 60
+    },
+
+
+    "custom/power_btn": {
+        "format": "",
+        "on-click": "systemctl poweroff",
+        "tooltip": false
+    },
+
+    "custom/lock_screen": {
+        "format": "",
+        "on-click": "hyprctl dispatch exit",
+        "tooltip": false
+    },
+
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "on-click": "activate",
+        "format": "{icon}"
+    },
+    
+
+    "cpu": {
+        "interval": 10,
+        "format": "  {usage}%",
+        "max-length": 10,
+        "format-alt-click": "click-right",
+        "format-alt": "   ",
+        "on-click": "htop"
+    },
+
+    "battery": {
+        "states": {
+	    "full":100,
+            "good": 80,
+            "medium": 50,
+            "warning": 20,
+	    "critical":5
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": "  {capacity}%",
+        "format-plugged": "  {capacity}%",
+        "format-alt-click": "click-right",
+        "format-alt": "{capacity}%",
+        "format-icons": ["  ", "  ", "  ", "  ", "  "]
+    },
+
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{volume}%  {format_source}",
+        "format-bluetooth": "{volume}%  {format_source}",
+        "format-bluetooth-muted": " {format_source}",
+        "format-muted": "  {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "on-click": "pavucontrol"
+    },
+
+    "backlight": {
+        // "device": "acpi_video1",
+	"states":{
+	    "full":100,
+	    "zero": 0
+	},
+        "format": "{icon} {percent}% ",
+        "format-icons": ["  ", "  "]
+    },
+
+    "tray": {
+        "icon-size": 16,
+        "spacing": 10
+    },
+	"memory": {
+		"format": "{}% "
+	},
+
+}]
+
