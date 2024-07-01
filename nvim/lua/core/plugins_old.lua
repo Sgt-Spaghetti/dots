@@ -50,22 +50,6 @@ return require('packer').startup(function(use)
 
   use 'lervag/vimtex'
 
-	use {
-	  'nvimdev/dashboard-nvim',
-	  event = 'VimEnter',
-	  config = function()
-		require('dashboard').setup({
-				theme = 'doom',
-				config = {
-				week_header = {
-						enable = true,
-					},
-				},
-		})
-	  end,
-	  requires = {'nvim-tree/nvim-web-devicons'}
-	}
-
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then

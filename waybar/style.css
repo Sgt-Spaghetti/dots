@@ -10,7 +10,7 @@
 
 window#waybar {
     background: #122d40;
-    opacity: 0.9;
+    opacity: 0.95;
     color: #FFFFFF;
     border: 1px solid #fed863;
     border-radius: 10px;
@@ -31,7 +31,7 @@ tooltip label{
 
 #workspaces {
   background: #000000;
-  margin: 5px 5px 5px 5px;
+  margin: 4px 5px 5px 4px;
   padding: 0px 5px 0px 5px;
   border-radius: 16px;
   border: solid 0px #f4d9e1;
@@ -58,12 +58,12 @@ tooltip label{
 
 #custom-power_btn{
 border-radius: 16px;
-margin: 5px 10px 5px 10px;
+margin: 4px 10px 4px 10px;
 }
 
 #custom-lock_screen{
 border-radius: 16px;
-margin: 5px 10px 5px 10px;
+margin: 4px 10px 4px 10px;
 }
 
 #window,
@@ -71,11 +71,11 @@ margin: 5px 10px 5px 10px;
 #disk,
 #memory,
 #clock{
-margin: 10px 5px 10px 5px;
+margin: 4px 5px 4px 5px;
 }
 
 #battery {
-margin: 10px 10px 10px 10px;
+margin: 4px 10px 4px 10px;
 }
 
 #pulseaudio,
@@ -85,7 +85,7 @@ margin: 10px 10px 10px 10px;
 #workspaces,
 #backlight {
     background: transparent;
-	margin: 10px 10px 10px 10px;
+	margin: 4px 10px 4px 10px;
 }
 
 #temperature.critical {

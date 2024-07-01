@@ -16,6 +16,7 @@
     ],
     "modules-right": [
         "cpu",
+		"network",
         "pulseaudio",
         "backlight",
         "tray",
@@ -34,7 +35,6 @@
         "on-click": "systemctl poweroff",
         "tooltip": false
     },
-
     "custom/lock_screen": {
         "format": "",
         "on-click": "hyprctl dispatch exit",
@@ -103,6 +103,12 @@
 		"path": "/",
 		"format": "{percentage_used}% ",
 		"on-click": "nemo",
+	},
+	"network": {
+		"format-wifi": "{signalStrength}% ",
+		"format-disconnected": "",
+		"tooltip-format": "{essid}\n{ifname}",
+		"on-click": "alacritty -e nmtui"
 	},
 
 }]
