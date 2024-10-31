@@ -37,7 +37,7 @@
     },
     "custom/lock_screen": {
         "format": "",
-        "on-click": "hyprctl dispatch exit",
+        "on-click": "sleep 1 && hyprctl dispatch 'dpms off'",
         "tooltip": false
     },
 

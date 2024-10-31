@@ -38,3 +38,8 @@ set recolor-lightcolor          "#1d2021" # bg
 set recolor-darkcolor           "#ebdbb2" # fg
 set recolor                     "true"
 set recolor-keephue             "true"    # keep original color
+
+# Set clipboard copy
+set selection-clipboard clipboard
+# PDF annotations in Okular
+map H exec ".config/zathura/zathura-annotate.sh '$FILE' $PAGE"
